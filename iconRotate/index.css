@@ -1,0 +1,20 @@
+.card {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+  transition: all 1s;
+}
+
+.card:hover {
+   background: orange;
+}
+
+.card:hover svg {
+  transform: rotateY(1turn);
+}

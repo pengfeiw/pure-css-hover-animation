@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900,900i');
+
+/* Set up */
+
+html {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family : 'Merriweather', serif;
+    font-size   : 0.5em;
+    margin      : 0;
+    padding     : 0;
+    /*background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);*/
+    background  : linear-gradient(45deg, #B7FFCB, #B7FFE7)
+}
+
+p {
+    color         : #383838;
+    font-size     : 4em;
+    font-weight   : 900;
+    letter-spacing: 4px;
+    margin-bottom : 15px;
+    margin-top    : 55px;
+    text-transform: uppercase;
+}
+
+.icons {
+    display      : block;
+    margin-left  : auto;
+    margin-right : auto;
+    margin-top   : calc(50vh - 110px);
+    width        : 380px;
+    height       : 220px;
+    text-align   : center;
+    border       : 2px solid #383838;
+    border-radius: 30px;
+    box-shadow   : 4px 5px 0px 0px #383838;
+}
+
+ico {
+    display    : block;
+    width      : 40px;
+    height     : 60px;
+    margin-left: 18px;
+    position   : relative;
+    background : none;
+    overflow   : hidden;
+    cursor     : pointer;
+    float      : left;
+}
+
+.btn-upload {
+    margin-left: 87px;
+}
+
+/* upload */
+
+ico.btn-upload:after {
+    box-sizing   : border-box;
+    display      : block;
+    content      : "";
+    width        : 40px;
+    height       : 40px;
+    border       : 2px solid #383838;
+    border-radius: 0px;
+    position     : absolute;
+    bottom       : 0;
+}
+
+ico.btn-upload:hover n {
+    transform: translateY(2px);
+}
+
+ico.btn-upload n {
+    display    : block;
+    width      : 2px;
+    height     : 38px;
+    background : #383838;
+    position   : absolute;
+    left       : 50%;
+    margin-left: -1px;
+    transform  : translateY(60px);
+    transition : 0.4s;
+}
+
+ico.btn-upload n:after,
+ico.btn-upload n:before {
+    content         : "";
+    width           : 2px;
+    height          : 17.5px;
+    background      : #383838;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    transform-origin: 0 0;
+    transform       : rotate(-45deg);
+}
+
+ico.btn-upload n:before {
+    transform-origin: 2px 0px;
+    transform       : rotate(45deg);
+}
+
+/* download */
+
+ico.btn-download:after {
+    box-sizing   : border-box;
+    display      : block;
+    content      : "";
+    width        : 40px;
+    height       : 40px;
+    border       : 2px solid #383838;
+    border-radius: 0px;
+    position     : absolute;
+    bottom       : 0;
+}
+
+ico.btn-download:hover n {
+    transform: translateY(2px);
+}
+
+ico.btn-download n {
+    display    : block;
+    width      : 2px;
+    height     : 38px;
+    background : #383838;
+    position   : absolute;
+    left       : 50%;
+    margin-left: -1px;
+    transform  : translateY(60px);
+    transition : 0.4s;
+}
+
+ico.btn-download n:after,
+ico.btn-download n:before {
+    content         : "";
+    width           : 2px;
+    height          : 17.5px;
+    background      : #383838;
+    position        : absolute;
+    bottom          : -1px;
+    left            : 0;
+    transform-origin: 0px 16px;
+    transform       : rotate(-45deg);
+}
+
+ico.btn-download n:before {
+    transform-origin: 2px 16px;
+    transform       : rotate(45deg);
+}
+
+/* list */
+
+ico.btn-list:after {
+    box-sizing   : border-box;
+    display      : block;
+    content      : "";
+    width        : 40px;
+    height       : 40px;
+    border       : 2px solid #383838;
+    border-radius: 0px;
+    position     : absolute;
+    bottom       : 0;
+}
+
+ico.btn-list:hover n {
+    transform: translateX(0px);
+}
+
+ico.btn-list:hover n:after,
+ico.btn-list:hover n:before {
+    transform: translateX(0px);
+}
+
+ico.btn-list n {
+    display   : block;
+    width     : 15px;
+    height    : 2px;
+    background: #383838;
+    position  : absolute;
+    top       : 33px;
+    left      : 15px;
+    transition: 0.4s;
+    transform : translateX(-30px);
+    box-shadow: -3px 0 0 #383838, -5px 0 0 #383838;
+}
+
+ico.btn-list n:after,
+ico.btn-list n:before {
+    content         : "";
+    width           : 15px;
+    height          : 2px;
+    background      : #383838;
+    position        : absolute;
+    top             : 6px;
+    transition      : 0.4s;
+    transition-delay: 0.2s;
+    transform       : translateX(-30px);
+    box-shadow      : -3px 0 0 #383838, -5px 0 0 #383838;
+    left            : 0px;
+}
+
+ico.btn-list n:before {
+    top            : 12px;
+    /* ransition-delay: 0.4s; */
+}
+
+/* halo */
+
+ico.btn-halo {
+    z-index: 3;
+}
+
+ico.btn-halo:after {
+    box-sizing   : border-box;
+    display      : block;
+    content      : "";
+    width        : 26px;
+    height       : 26px;
+    border       : 2px solid #383838;
+    border-radius: 20px;
+    position     : absolute;
+    bottom       : 8px;
+    left         : 7px;
+    background   : none;
+}
+
+ico.btn-halo:before {
+    display         : block;
+    content         : "";
+    width           : 32px;
+    height          : 2px;
+    position        : absolute;
+    bottom          : 23px;
+    left            : 1px;
+    background      : transparent;
+    transform       : rotate(-45deg) rotatey(90deg);
+    transform-origin: 22.5px 4px;
+    border-left     : 4px solid #383838;
+    border-right    : 4px solid #383838;
+    transition      : 0.4s;
+}
+
+ico.btn-halo:hover:before {
+    transform: rotate(-45deg) rotatey(0deg);
+}
+
+ico.btn-halo:hover n {
+    transform: rotatey(0deg);
+}
+
+ico.btn-halo:hover n:after {
+    transform: rotate(45deg) rotatey(0deg);
+}
+
+ico.btn-halo:hover n:before {
+    transform: rotate(90deg) rotatey(0deg);
+}
+
+ico.btn-halo n {
+    display     : block;
+    width       : 32px;
+    height      : 2px;
+    position    : absolute;
+    top         : 39px;
+    left        : 0px;
+    border-left : 4px solid #383838;
+    border-right: 4px solid #383838;
+    transition  : 0.4s;
+    transform   : rotatey(90deg);
+}
+
+ico.btn-halo n:after,
+ico.btn-halo n:before {
+    content         : "";
+    transition      : 0.4s;
+    width           : 33px;
+    height          : 2px;
+    top             : 0px;
+    left            : -8px;
+    background      : transparent;
+    position        : absolute;
+    transform       : rotate(45deg) rotatey(90deg);
+    transform-origin: 22.5px 4px;
+    border-left     : 4px solid #383838;
+    border-right    : 4px solid #383838;
+}
+
+ico.btn-halo n:before {
+    transform       : rotate(90deg) rotatey(90deg);
+    transform-origin: 22px 3px;
+    top             : -1px;
+    left            : -8px;
+    width           : 32px;
+    border-left     : 4px solid #383838;
+    border-right    : 4px solid #383838;
+}

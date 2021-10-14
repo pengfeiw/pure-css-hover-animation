@@ -1,0 +1,52 @@
+.card {
+    width: 200px;
+    height: 200px;
+    background: url(https://www.pengfeixc.com/avatar.svg);
+    
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(19, 30, 33, 0.4);
+  transition: all 1s;
+}
+
+.text1,.text2 {
+  width: 120px;
+  text-align: center;
+  transition: all 1s;
+  padding: 2px 5px;
+}
+
+.text1 {
+  color: white;
+  background: rgb(101, 198, 187);
+  position: absolute;
+  left: -130px;
+  top:80px;
+}
+
+.text2 {
+  color: #e19433;
+  background: #faf1e6;
+  position: absolute;
+  right: -130px;
+  top: 100px;
+}
+
+.layer:hover {
+  background-color: transparent;
+}
+
+.layer:hover .text1 {
+  left: 0px;
+}
+
+.layer:hover .text2 {
+  right: 0px;
+}
